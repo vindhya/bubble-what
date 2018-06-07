@@ -4,12 +4,60 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>What's your flavour?</title>
+	<title>Bubble Tea</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 	
-	<h1>Hello!</h1>
+	<h1>Mmm</h1>
+
+	<form action="">
+		<div>
+			<div>
+				<p>What's the weather like outside?</p>
+				<input type="radio" name="weather" id="cold" value="cold">
+				<label for="cold">Freezing</label>
+				<input type="radio" name="weather" id="warm" value="warm">
+				<label for="warm">It's nice</label>
+				<input type="radio" name="weather" id="hot" value="hot">
+				<label for="hot">Sweltering</label>
+			</div>
+
+			<div>
+				<p>What flavour are you feeling? / How do you feel today?</p>
+				<input type="radio" name="flavour" id="fruity" value="fruity">
+				<label for="fruity">Fruity</label>
+				<input type="radio" name="flavour" id="funky" value="funky">
+				<label for="funky">Funky</label>
+				<input type="radio" name="flavour" id="tea" value="tea">
+				<label for="tea">Tea-y</label>
+			</div>
+
+			<div>
+				<p>Are you a milk person?</p>
+				<input type="radio" name="milk" id="milk" value="milk">
+				<label for="milk">YES!</label>
+				<input type="radio" name="milk" id="no-milk" value="no-milk">
+				<label for="no-milk">Ew, no.</label>
+			</div>
+
+			<div>
+				<p>What do you like to dress up your bubble tea?</p>
+				<input type="radio" name="topping" id="tapioca" value="tapioca">
+				<label for="tapioca">Tapioca pearls</label>
+				<input type="radio" name="topping" id="red-bean" value="red-bean">
+				<label for="red-bean">Red bean</label>
+				<input type="radio" name="topping" id="sago" value="sago">
+				<label for="sago">Sago</label>
+				<input type="radio" name="topping" id="rainbow-jelly" value="rainbow-jelly">
+				<label for="rainbow-jelly">Rainbow jelly</label>
+				<input type="radio" name="topping" id="coconut-jelly" value="coconut-jelly">
+				<label for="coconut-jelly">Coconut jelly</label>
+				<input type="radio" name="topping" id="grass-jelly" value="grass-jelly">
+				<label for="grass-jelly">Grass jelly</label>
+			</div>
+		</div>
+	</form>
 
 	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 	<script src="firebase-config.js"></script>
