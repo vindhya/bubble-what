@@ -40,7 +40,7 @@ $(document).ready(function() {
 	};
 
 	// checks whether the user chosen topping exists in the topping object passed in and returns a boolean
-	const checkTopping = (toppings) => {
+	const checkTopping = toppings => {
 		let hasTopping = false;
 
 		if (userTopping === 'no-topping') {
@@ -55,7 +55,7 @@ $(document).ready(function() {
 	};
 
 	// checks whether the passed in drink object meshes with the user's inputted preferences (global variables)
-	const checkDrinkMatch = (drink) => {
+	const checkDrinkMatch = drink => {
 		let drinkMatch = false;
 		
 		if (
@@ -82,7 +82,7 @@ $(document).ready(function() {
 		dbRoot.once("value", snapshot => {
 			snapshot.forEach(childSnapshot => {
 
-				const shop = childSnapshot.key;
+				// const shop = childSnapshot.key;
 				const toppings = childSnapshot.child('toppings').val();
 				const drinks = childSnapshot.child('drinks').val();
 
@@ -143,12 +143,12 @@ $(document).ready(function() {
 		if (drinkNum > 1) {
 			// get a random number and display the drink with that key
 			const randIndex = randomNumber(drinkNum);
-			console.log('randomNumber index', randIndex);
+			// console.log('randomNumber index', randIndex);
 			for (shop in drinkResults) {
 				for (drink in drinkResults[shop]['drinks']) {
 					if (drinkResults[shop]['drinks'][drink].key === randIndex) {
-						console.log(drinkResults[shop]['drinks'][drink].key);	
-						console.log(drink);
+						// console.log(drinkResults[shop]['drinks'][drink].key);	
+						// console.log(drink);
 						displayDrink(drink, drinkResults[shop].name, drinkResults[shop].location);
 					}
 				}
