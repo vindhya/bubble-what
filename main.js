@@ -27,7 +27,11 @@ $(document).ready(function() {
 		}
 
 		if (userTopping != 'no-topping') {
-			topping = ` with ${userTopping}`;
+			if (userTopping.includes('-')) {
+				topping = ` with ${userTopping.replace('-', ' ')}`;
+			} else {
+				topping = ` with ${userTopping}`;
+			}
 		}
 
 		displayMap(shopLocation);
