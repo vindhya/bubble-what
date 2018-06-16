@@ -152,8 +152,8 @@ $(document).ready(function() {
 				for (drink in drinkResults[shop]['drinks']) {
 					if (drinkResults[shop]['drinks'][drink].key === randIndex) {
 						// console.log(drinkResults[shop]['drinks'][drink].key);	
-						// console.log(drink);
-						displayDrink(drink, drinkResults[shop].name, drinkResults[shop].location);
+						// console.log(drinkResults[shop]['drinks'][drink].name);
+						displayDrink(drinkResults[shop]['drinks'][drink].name, drinkResults[shop].name, drinkResults[shop].location);
 					}
 				}
 			}
@@ -162,7 +162,8 @@ $(document).ready(function() {
 			// display the one drink result
 			for (shop in drinkResults) {
 				for (drink in drinkResults[shop]['drinks']) {
-					displayDrink(drink, drinkResults[shop].name, drinkResults[shop].location);
+					// console.log(drink);
+					displayDrink(drinkResults[shop]['drinks'][drink].name, drinkResults[shop].name, drinkResults[shop].location);
 				}
 			}
 		} else {
