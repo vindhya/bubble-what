@@ -15,55 +15,53 @@
 		<div>
 			<div>
 				<p>What's the weather like outside?</p>
-				<input type="radio" name="weather" id="cold" value="hot">
-				<label for="cold">Freezing</label>
-				<input type="radio" name="weather" id="warm" value="cold">
-				<label for="warm">It's nice</label>
-				<input type="radio" name="weather" id="hot" value="slush">
-				<label for="hot">Sweltering</label>
+				<select name="weather" id="weather-select">
+					<option>hmm</option>
+					<option value="hot">freezing</option>
+					<option value="cold">it's nice</option>
+					<option value="slush">sweltering</option>
+				</select>
 			</div>
 
 			<div>
 				<p>What flavour are you feeling? / How do you feel today?</p>
-				<input type="radio" name="flavour" id="fruity" value="fruity">
-				<label for="fruity">Fruity</label>
-				<input type="radio" name="flavour" id="funky" value="funky">
-				<label for="funky">Funky</label>
-				<input type="radio" name="flavour" id="tea" value="tea">
-				<label for="tea">Tea-y</label>
+				<select name="flavour" id="flavour-select">
+					<option>hmmm</option>
+					<option value="fruity">fruity</option>
+					<option value="funky">funky</option>
+					<option value="tea">tea-y</option>
+				</select>
 			</div>
 
 			<div>
 				<p>Are you a milk person?</p>
-				<input type="radio" name="milk" id="milk" value="milk">
-				<label for="milk">YES!</label>
-				<input type="radio" name="milk" id="no-milk" value="no-milk">
-				<label for="no-milk">Ew, no.</label>
+				<select name="milk" id="milk-select">
+					<option>hmmmm</option>
+					<option value="milk">YES!</option>
+					<option value="no-milk">ew, no.</option>
+				</select>
 			</div>
-
+			
 			<div>
 				<p>How do you like to dress up your bubble tea?</p>
-				<input type="radio" name="topping" id="tapioca" value="tapioca">
-				<label for="tapioca">Tapioca pearls</label>
-				<input type="radio" name="topping" id="red-bean" value="red-bean">
-				<label for="red-bean">Red bean</label>
-				<input type="radio" name="topping" id="sago" value="sago">
-				<label for="sago">Sago</label>
-				<input type="radio" name="topping" id="rainbow-jelly" value="rainbow-jelly">
-				<label for="rainbow-jelly">Rainbow jelly</label>
-				<input type="radio" name="topping" id="coconut-jelly" value="coconut-jelly">
-				<label for="coconut-jelly">Coconut jelly</label>
-				<input type="radio" name="topping" id="grass-jelly" value="grass-jelly">
-				<label for="grass-jelly">Grass jelly</label>
+				<select name="topping" id="topping-select">
+					<option>hmmmmm</option>
+					<option value="no-topping">no topping</option>
+					<option value="tapioca">tapioca pearls</option>
+					<option value="red-bean">red bean</option>
+					<option value="sago">sago</option>
+					<option value="rainbow-jelly">rainbow jelly</option>
+					<option value="coconut-jelly">coconut jelly</option>
+					<option value="grass-jelly">grass jelly</option>
+				</select>
 			</div>
 
 			<input type="submit" value="Gimme bubble tea!">
 		</div>
 	</form>
 
-	<div class="message">
-
-	</div>
+	<div class="message"></div>
+	<div class="shop-location"></div>
 
 	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 	<script src="firebase-config.js"></script>
