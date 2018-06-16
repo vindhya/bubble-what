@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	console.log('ready!');
+	// console.log('ready!');
 
 	let userDrinkTemp;
 	let userFlavour;
@@ -82,7 +82,7 @@ $(document).ready(function() {
 		dbRoot.once("value", snapshot => {
 			snapshot.forEach(childSnapshot => {
 
-				// const shop = childSnapshot.key;
+				const shop = childSnapshot.key;
 				const toppings = childSnapshot.child('toppings').val();
 				const drinks = childSnapshot.child('drinks').val();
 
