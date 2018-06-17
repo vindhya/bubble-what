@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Bubble Tea Quiz</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Varela+Round" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800|Varela+Round" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
 	
 		<div class="headings">
 			<h1>Not sure what bubble tea to order?</h1>
-			<p>Answer the following questions to receive a bubble tea drink order and find out where to get it in Toronto:</p>
+			<p>Answer the following questions to receive a bubble tea drink recommendation and find out where to get it downtown Toronto:</p>
 		</div>
 
 		<form action="">
@@ -27,21 +27,21 @@
 							<label for="cold">
 								<!-- <img src="http://via.placeholder.com/200x200" alt="placeholder image"> -->
 								<img src="images/cold.png" alt="cold temperature thermometer">
-								freezing
+								<div>freezing</div>
 							</label>
 						</div>
 						<div class="answer">
 							<input type="radio" name="weather" id="warm" value="cold">
 							<label for="warm">
 								<img src="images/normal.png" alt="room temperature thermometer">
-								it's nice
+								<div>it's nice</div>
 							</label>
 						</div>
 						<div class="answer">
 							<input type="radio" name="weather" id="hot" value="slush">
 							<label for="hot">
 								<img src="images/hot.png" alt="hot temperature thermometer">
-								sweltering
+								<div>sweltering</div>
 							</label>
 						</div>
 					</div>
@@ -50,22 +50,47 @@
 				<div class="question">
 					<p>What flavour are you feeling?</p>
 					<div class="answers">
-						<input type="radio" name="flavour" id="fruity" value="fruity">
-						<label for="fruity">fruity</label>
-						<input type="radio" name="flavour" id="funky" value="funky">
-						<label for="funky">funky</label>
-						<input type="radio" name="flavour" id="tea" value="tea">
-						<label for="tea">tea-y</label>
+						<div class="answer">
+							<input type="radio" name="flavour" id="fruity" value="fruity">
+							<label for="fruity">
+								<img src="images/fruit.png" alt="pineapple fruit">
+								<div>fruity</div>
+							</label>
+						</div>
+						<div class="answer">
+							<input type="radio" name="flavour" id="funky" value="funky">
+							<label for="funky">
+								<img src="images/star.png" alt="star">
+								<div>funky</div>
+							</label>
+						</div>
+						<div class="answer">
+							<input type="radio" name="flavour" id="tea" value="tea">
+							<label for="tea">
+								<img class="tea" src="images/tea.png" alt="teacup with tea in it">
+								<div>tea-y</div>
+							</label>
+						</div>
 					</div>
 				</div>
 
 				<div class="question">
 					<p>Are you a milk person?</p>
 					<div class="answers">
-						<input type="radio" name="milk" id="milk" value="milk">
-						<label for="milk">YES!</label>
-						<input type="radio" name="milk" id="no-milk" value="no-milk">
-						<label for="no-milk">ew, no.</label>
+						<div class="answer">
+							<input type="radio" name="milk" id="milk" value="milk">
+							<label for="milk">
+								<img src="images/cow.png" alt="cow">
+								<div>YES!</div>
+							</label>
+						</div>
+						<div class="answer">
+							<input type="radio" name="milk" id="no-milk" value="no-milk">
+							<label for="no-milk">
+								<img src="images/no-milk.png" alt="crossed out cow">
+								<div>ew, no.</div>
+							</label>
+						</div>
 					</div>
 				</div>
 				
@@ -73,24 +98,26 @@
 					<p>How do you like to dress up your bubble tea?</p>
 					<div class="answers">
 						<select name="topping" id="topping-select">
-							<option value="no-topping">no topping</option>
 							<option value="tapioca">tapioca pearls</option>
 							<option value="red-bean">red bean</option>
 							<option value="sago">sago</option>
 							<option value="rainbow-jelly">rainbow jelly</option>
 							<option value="coconut-jelly">coconut jelly</option>
 							<option value="grass-jelly">grass jelly</option>
+							<option value="no-topping">no toppings</option>
 						</select>
 					</div>
 				</div>
 
-				<input type="submit" value="Gimme bubble tea!">
+				<button type="submit">Gimme bubble tea!</button>
 				
 			</div>
 		</form>
 
-		<div class="message"></div>
-		<div class="shop-location"></div>
+		<div class="message">
+			<p></p>
+			<div class="shop-location"></div>
+		</div>
 
 	</div>
 
