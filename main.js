@@ -38,13 +38,13 @@ $(document).ready(function() {
 
 		if (userTopping != 'no-topping') {
 			if (userTopping.includes('-')) {
-				topping = ` with ${userTopping.replace('-', ' ')}`;
+				topping = ` with <span class="drink-display">${userTopping.replace('-', ' ')}</span>`;
 			} else {
-				topping = ` with ${userTopping}`;
+				topping = ` with <span class="drink-display">${userTopping}</span>`;
 			}
 		}
 
-		const html = `Order a <span class="drink-display">${drinkTemp}${drink}${topping}</span> from <span class="drink-display">${shopName}</span>`;
+		const html = `Order a <span class="drink-display">${drinkTemp}${drink}</span>${topping} from <span class="drink-display">${shopName}</span>`;
 		$('.message p').html(html);
 		displayMap(shopLocation);
 		scrollDown('.message');
