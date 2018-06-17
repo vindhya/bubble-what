@@ -98,7 +98,18 @@
 	<!-- <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script> -->
 	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
-	<script src="firebase-config.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyBcOQ8jxlpDsrzA4P1G2LBA-h0CtD_54Sg",
+			authDomain: "bubble-what.firebaseapp.com",
+			databaseURL: "https://bubble-what.firebaseio.com",
+			projectId: "bubble-what",
+			storageBucket: "bubble-what.appspot.com",
+			messagingSenderId: "47376806199"
+		};
+		firebase.initializeApp(config);
+	</script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="main.js"></script>
 </body>
