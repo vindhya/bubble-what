@@ -16,6 +16,12 @@ $(document).ready(function() {
 		}
 	};
 
+	const scrollDown = element => {
+		document.querySelector(element).scrollIntoView({
+			behavior: 'smooth'
+		});
+	};
+
 	// prints a drink based on the provided arguments/parameters, userTopping global variable, and userDrinkTemp global variable
 	const displayDrink = (drink, shopName, shopLocation) => {
 		// console.log(drink, shopName, shopLocation, userTopping, userDrinkTemp);
@@ -36,11 +42,13 @@ $(document).ready(function() {
 
 		displayMap(shopLocation);
 		$('.message').text(`You should order a ${drinkTemp}${drink}${topping} from ${shopName}.`);
+		scrollDown('.message');
 	};
 
 	const sorryMessage = () => {
 		displayMap();
 		$('.message').text(`Sorry, we don't have any drinks for you based on your preferences. Please try changing some of your answers around.`);
+		scrollDown('.message');
 	};
 
 	// checks whether the user chosen topping exists in the topping object passed in and returns a boolean
