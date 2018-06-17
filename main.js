@@ -178,9 +178,12 @@ $(document).ready(function() {
 		event.preventDefault();
 
 		// grab the values that the user chose and put them in variables
-		userDrinkTemp = $('#weather-select').val();
-		userFlavour = $('#flavour-select').val();
-		userMilk = $('#milk-select').val();
+		// userDrinkTemp = $('#weather-select').val();
+		userDrinkTemp = $('input[name="weather"]:checked').val();
+		// userFlavour = $('#flavour-select').val();
+		userFlavour = $('input[name="flavour"]:checked').val();
+		// userMilk = $('#milk-select').val();
+		userMilk = $('input[name="milk"]:checked').val();
 		userTopping = $('#topping-select').val();
 
 		console.log('user inputs:', userDrinkTemp, userFlavour, userMilk, userTopping);
