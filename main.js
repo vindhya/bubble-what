@@ -8,12 +8,16 @@ $(document).ready(function() {
 
 	// displays an embedded google maps based on the passed in shopLocation URL
 	const displayMap = shopLocation => {
+		const mapWidth = '100%';
+		const mapHeight = 350;
+
 		if (shopLocation) { // if shopLocation has a value
-			const locationHtml = `<iframe src="${shopLocation}" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>`;
+			const locationHtml = `<iframe src="${shopLocation}" width="${mapWidth}" height="${mapHeight}" frameborder="0" style="border:0" allowfullscreen></iframe>`;
 			$('.shop-location').html(locationHtml);
 		} else { // if shopLocation is undefined, i.e., there is no drink result
 			$('.shop-location').empty();
 		}
+
 	};
 
 	const scrollDown = element => {
@@ -40,8 +44,9 @@ $(document).ready(function() {
 			}
 		}
 
+		const html = `Order a <span class="drink-display">${drinkTemp}${drink}${topping}</span> from <span class="drink-display">${shopName}</span>`;
+		$('.message p').html(html);
 		displayMap(shopLocation);
-		$('.message').text(`You should order a ${drinkTemp}${drink}${topping} from ${shopName}.`);
 		scrollDown('.message');
 	};
 
