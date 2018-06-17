@@ -15,31 +15,32 @@
 		<div>
 			<div>
 				<p>What's the weather like outside?</p>
-				<select name="weather" id="weather-select">
-					<option>hmm</option>
-					<option value="hot">freezing</option>
-					<option value="cold">it's nice</option>
-					<option value="slush">sweltering</option>
-				</select>
+				<input type="radio" name="weather" id="cold" value="hot">
+				<label for="cold">
+					<img src="http://via.placeholder.com/200x200" alt="placeholder image">freezing
+				</label>
+				<input type="radio" name="weather" id="warm" value="cold">
+				<label for="warm">it's nice</label>
+				<input type="radio" name="weather" id="hot" value="slush">
+				<label for="hot">sweltering</label>
 			</div>
 
 			<div>
 				<p>What flavour are you feeling? / How do you feel today?</p>
-				<select name="flavour" id="flavour-select">
-					<option>hmmm</option>
-					<option value="fruity">fruity</option>
-					<option value="funky">funky</option>
-					<option value="tea">tea-y</option>
-				</select>
+				<input type="radio" name="flavour" id="fruity" value="fruity">
+				<label for="fruity">fruity</label>
+				<input type="radio" name="flavour" id="funky" value="funky">
+				<label for="funky">funky</label>
+				<input type="radio" name="flavour" id="tea" value="tea">
+				<label for="tea">tea-y</label>
 			</div>
 
 			<div>
 				<p>Are you a milk person?</p>
-				<select name="milk" id="milk-select">
-					<option>hmmmm</option>
-					<option value="milk">YES!</option>
-					<option value="no-milk">ew, no.</option>
-				</select>
+				<input type="radio" name="milk" id="milk" value="milk">
+				<label for="milk">YES!</label>
+				<input type="radio" name="milk" id="no-milk" value="no-milk">
+				<label for="no-milk">ew, no.</label>
 			</div>
 			
 			<div>
