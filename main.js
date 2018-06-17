@@ -199,7 +199,7 @@ $(document).ready(function() {
 		userMilk = $('input[name="milk"]:checked').val();
 		userTopping = $('#topping-select').val();
 
-		console.log('user inputs:', userDrinkTemp, userFlavour, userMilk, userTopping);
+		// console.log('user inputs:', userDrinkTemp, userFlavour, userMilk, userTopping);
 
 		getResults();
 	});
