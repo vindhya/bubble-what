@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	background-color: #DFDBE5;
+	background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.08' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+
+	color: #3D3847;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+}
+
+img {
+	width: 100%;
+}
+
+.container {
+	max-width: 90rem;
+	margin: 5rem auto;
+}
+
+.headings {
+	margin-bottom: 5rem;
+}
+
+h1 {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 4rem;
+}
+
+.form-container {
+	display: grid;
+	grid-auto-flow: row;
+	justify-items: center;
+}
+
+.question {
+	display: grid;
+	justify-items: center;
+}
+
+.question p {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 3rem;
+}
+
+.answers {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+}
